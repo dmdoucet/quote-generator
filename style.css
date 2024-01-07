@@ -1,5 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(90deg,#AAD9BB, #D5F0C1);
+    height: 100vh;
+    color: #F9F7C9;
+}
+
+.quote-box {
+    background-color:#80BCBD;
+    width: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 4rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+hr {
+    margin-bottom: 2.5rem;
+    margin-top: -.6rem;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    min-height: 7rem;
+}
+
+blockquote::before , blockquote::after {
+    content: '"';
+}
+
+span {
+    display: block;
+    float: right;
+    position: relative;
+}
+
+.btns {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background:#AAD9BB;
+    color: #F9F7C9;
+    padding: .5rem 2rem;
+    margin: .25rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F9F7C9;
+    color: #AAD9BB;
+}
+
+button:nth-child(2) {
+    display: inline-flex;
+    border: 1px solid grey;
+    background-color: azure;
+    color: #80BCBD;
+}
+
+button:nth-child(2):hover {
+    background-color: #F9F7C9;
+    color: #AAD9BB;
+} 
+
+button img {
+    margin-right: 0.5rem;
 }
